@@ -1,0 +1,46 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    min-width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.central{
+    width: fit-content;
+    background: rgba(128, 128, 128, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0);
+}
+.central button{
+    background: darkblue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5;
+    width: 50%;
+}
+.central button:hover{
+    background: white;
+    color: darkblue;
+}
+.central input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    width: 80%;
+}
+.central .sub-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
