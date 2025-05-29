@@ -3,9 +3,17 @@ const botao = document.querySelector('#botao')
 const qr = document.querySelector('#qrcode') 
 
 botao.addEventListener('click',gerarQR)
+url.addEventListener('keydow',()=>{
+    if(event..key == 'Enter'){
+    gerarQR()
+}
+       
+})
 
 function gerarQR(){
     texto = url.value
+    if(texto){
+    qr.innerHTML = ''
     qr.innerHTML = ''
 
     code = new QRCode(
@@ -18,4 +26,7 @@ function gerarQR(){
             colorLight: 'black'
         }
     )
+    }else{
+            qr.innerHTML = ''
+        }
 }
